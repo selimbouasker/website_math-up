@@ -9,7 +9,7 @@ export default function LandingPage() {
               <rect width="300" height="300" fill="#059669" rx="60"/>
               <path d="M 215,95 L 119,95 A 42,55 0 0 0 119,205 L 215,205" fill="none" stroke="white" strokeWidth="36" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="font-bold text-xl text-gray-900">Math-up</span>
+            <span className="font-bold text-xl text-gray-900">Math <span className="text-[#059669]">up</span></span>
           </div>
           <a
             href="https://student.math-up.ai/signup"
@@ -49,10 +49,10 @@ export default function LandingPage() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
-            Pourquoi Math-up ?
+            Pourquoi Math up ?
           </h2>
           <p className="text-center text-gray-500 mb-14 max-w-xl mx-auto">
-            Chaque élève est différent. Math-up s&apos;adapte pour que chacun progresse à son rythme.
+            Chaque élève est différent. Math up s&apos;adapte pour que chacun progresse à son rythme.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -137,10 +137,10 @@ export default function LandingPage() {
               <rect width="300" height="300" fill="#059669" rx="60"/>
               <path d="M 215,95 L 119,95 A 42,55 0 0 0 119,205 L 215,205" fill="none" stroke="white" strokeWidth="36" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="font-semibold text-gray-700">Math-up</span>
+            <span className="font-semibold text-gray-700">Math up</span>
           </div>
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Math-up. Tous droits réservés.
+            &copy; {new Date().getFullYear()} Math up. Tous droits réservés.
           </p>
         </div>
       </footer>
