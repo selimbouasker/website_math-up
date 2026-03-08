@@ -5,9 +5,10 @@ export default function LandingPage() {
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#059669] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
+            <svg width="32" height="32" viewBox="0 0 300 300" className="shrink-0">
+              <rect width="300" height="300" fill="#059669" rx="60"/>
+              <path d="M 215,95 L 119,95 A 42,55 0 0 0 119,205 L 215,205" fill="none" stroke="white" strokeWidth="36" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             <span className="font-bold text-xl text-gray-900">Math-up</span>
           </div>
           <a
@@ -26,8 +27,8 @@ export default function LandingPage() {
             Les maths <span className="text-[#059669]">autrement</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Une plateforme qui s&apos;adapte au niveau de chaque eleve.
-            Exercices personnalises, coach IA integre, programme tunisien complet.
+            Une plateforme qui s&apos;adapte au niveau de chaque élève.
+            Exercices personnalisés, coach IA intégré, programme tunisien complet.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -37,9 +38,9 @@ export default function LandingPage() {
               Commencer gratuitement
             </a>
           </div>
-          {/* Espace reserve pour la video du fondateur */}
+          {/* Espace réservé pour la vidéo du fondateur */}
           <div className="mt-16 max-w-3xl mx-auto aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
-            <p className="text-gray-400 text-lg">Video de presentation</p>
+            <p className="text-gray-400 text-lg">Vidéo de présentation</p>
           </div>
         </div>
       </section>
@@ -51,7 +52,7 @@ export default function LandingPage() {
             Pourquoi Math-up ?
           </h2>
           <p className="text-center text-gray-500 mb-14 max-w-xl mx-auto">
-            Chaque eleve est different. Math-up s&apos;adapte pour que chacun progresse a son rythme.
+            Chaque élève est différent. Math-up s&apos;adapte pour que chacun progresse à son rythme.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -62,9 +63,9 @@ export default function LandingPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Adaptation personnalisee</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Adaptation personnalisée</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Les exercices s&apos;adaptent automatiquement au niveau de l&apos;eleve. Ni trop facile, ni trop difficile.
+                Les exercices s&apos;adaptent automatiquement au niveau de l&apos;élève. Ni trop facile, ni trop difficile.
               </p>
             </div>
 
@@ -75,9 +76,9 @@ export default function LandingPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Coach IA integre</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Coach IA intégré</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Un tuteur intelligent qui guide sans donner les reponses. Il aide a comprendre, pas a copier.
+                Un tuteur intelligent qui guide sans donner les réponses. Il aide à comprendre, pas à copier.
               </p>
             </div>
 
@@ -90,7 +91,7 @@ export default function LandingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Progression visible</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Suivi detaille par notion et par chapitre. L&apos;eleve et les parents voient les progres en temps reel.
+                Suivi détaillé par notion et par chapitre. L&apos;élève et les parents voient les progrès en temps réel.
               </p>
             </div>
 
@@ -103,7 +104,7 @@ export default function LandingPage() {
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Programme tunisien</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Contenu 100% aligne sur le programme CNP. 1ere annee secondaire, avec plus de niveaux a venir.
+                Contenu 100% aligné sur le programme CNP. 1ère année secondaire, avec plus de niveaux à venir.
               </p>
             </div>
           </div>
@@ -114,10 +115,10 @@ export default function LandingPage() {
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Pret a commencer ?
+            Prêt à commencer ?
           </h2>
           <p className="text-gray-600 mb-8">
-            Inscription gratuite, sans carte bancaire. Commence a progresser des maintenant.
+            Inscription gratuite, sans carte bancaire. Commence à progresser dès maintenant.
           </p>
           <a
             href="https://student.math-up.ai/signup"
@@ -132,13 +133,14 @@ export default function LandingPage() {
       <footer className="border-t border-gray-200 py-8 px-6">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-[#059669] rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-xs">M</span>
-            </div>
+            <svg width="24" height="24" viewBox="0 0 300 300" className="shrink-0">
+              <rect width="300" height="300" fill="#059669" rx="60"/>
+              <path d="M 215,95 L 119,95 A 42,55 0 0 0 119,205 L 215,205" fill="none" stroke="white" strokeWidth="36" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             <span className="font-semibold text-gray-700">Math-up</span>
           </div>
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Math-up. Tous droits reserves.
+            &copy; {new Date().getFullYear()} Math-up. Tous droits réservés.
           </p>
         </div>
       </footer>
