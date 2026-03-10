@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Math up | Les maths autrement',
+  title: 'Math Up | Les maths autrement',
   description: 'Plateforme educative de mathematiques adaptee au niveau de chaque eleve. Programme tunisien, IA integree, progression personnalisee.',
 };
 
