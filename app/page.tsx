@@ -40,10 +40,6 @@ export default function LandingPage() {
               Commencer gratuitement
             </a>
           </div>
-          {/* Espace réservé pour la vidéo du fondateur */}
-          <div className="mt-16 max-w-3xl mx-auto aspect-video bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
-            <p className="text-gray-400 text-lg">Vidéo de présentation</p>
-          </div>
         </div>
       </section>
 
