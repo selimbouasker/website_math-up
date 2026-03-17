@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://i.ibb.co/LhHtYLwZ/icon.png',
         width: 800,
         height: 800,
         alt: 'Math Up',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Math Up | Les maths autrement',
     description: 'Plateforme éducative de mathématiques adaptée au niveau de chaque élève.',
-    images: ['/og-image.png'],
+    images: ['https://i.ibb.co/LhHtYLwZ/icon.png'],
   },
   other: {
     'facebook-domain-verification': 'esi4lh365l8kb6k779ly2p1gcfgzas',
