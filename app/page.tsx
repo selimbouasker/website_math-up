@@ -11,16 +11,16 @@ export default function LandingPage() {
             </svg>
             <span className="font-bold text-xl text-gray-900">Math <span className="text-[#059669]">Up</span></span>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <a
               href="https://student.math-up.ai/signup"
-              className="px-4 py-2 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-sm font-semibold transition-colors"
+              className="px-3 sm:px-4 py-2 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap"
             >
               Créer un compte
             </a>
             <a
               href="https://student.math-up.ai/login"
-              className="px-4 py-2 border border-gray-300 hover:border-[#059669] text-gray-700 hover:text-[#059669] rounded-xl text-sm font-semibold transition-colors"
+              className="px-3 sm:px-4 py-2 border border-gray-300 hover:border-[#059669] text-gray-700 hover:text-[#059669] rounded-xl text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap"
             >
               Se connecter
             </a>
