@@ -15,11 +15,20 @@ export const metadata: Metadata = {
     siteName: 'Math Up',
     locale: 'fr_FR',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 800,
+        height: 800,
+        alt: 'Math Up',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Math Up | Les maths autrement',
     description: 'Plateforme éducative de mathématiques adaptée au niveau de chaque élève.',
+    images: ['/og-image.png'],
   },
   other: {
     'facebook-domain-verification': 'esi4lh365l8kb6k779ly2p1gcfgzas',

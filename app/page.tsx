@@ -3,13 +3,13 @@ export default function LandingPage() {
     <div className="min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <svg width="32" height="32" viewBox="0 0 300 300" className="shrink-0">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <svg width="28" height="28" viewBox="0 0 300 300" className="shrink-0 sm:w-8 sm:h-8">
               <rect width="300" height="300" fill="#059669" rx="60"/>
               <path d="M 215,95 L 119,95 A 42,55 0 0 0 119,205 L 215,205" fill="none" stroke="white" strokeWidth="36" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="font-bold text-xl text-gray-900">Math <span className="text-[#059669]">Up</span></span>
+            <span className="font-bold text-lg sm:text-xl text-gray-900 whitespace-nowrap">Math <span className="text-[#059669]">Up</span></span>
           </div>
           <div className="flex items-center gap-2 sm:gap-3">
             <a
