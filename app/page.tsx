@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function LandingPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -13,19 +19,64 @@ export default function LandingPage() {
           </div>
           <div className="flex items-center gap-2 sm:gap-3">
             <a
+              href="/ambassadeur"
+              className="relative px-3 sm:px-4 py-2 text-[#059669] hover:text-[#047857] text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap flex items-center gap-1.5"
+            >
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <span className="hidden sm:inline">Ambassadeur</span>
+              <span className="absolute top-1.5 right-1.5 sm:top-1 sm:right-0 w-2 h-2 bg-[#34D399] rounded-full animate-pulse" />
+            </a>
+            {/* Desktop buttons */}
+            <a
               href="https://student.math-up.ai/signup"
-              className="px-3 sm:px-4 py-2 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap"
+              className="hidden sm:inline-block px-4 py-2 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-sm font-semibold transition-colors whitespace-nowrap"
             >
               Créer un compte
             </a>
             <a
               href="https://student.math-up.ai/login"
-              className="px-3 sm:px-4 py-2 border border-gray-300 hover:border-[#059669] text-gray-700 hover:text-[#059669] rounded-xl text-xs sm:text-sm font-semibold transition-colors whitespace-nowrap"
+              className="hidden sm:inline-block px-4 py-2 border border-gray-300 hover:border-[#059669] text-gray-700 hover:text-[#059669] rounded-xl text-sm font-semibold transition-colors whitespace-nowrap"
+            >
+              Se connecter
+            </a>
+            {/* Mobile burger */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="sm:hidden p-2 text-gray-700"
+              aria-label="Menu"
+            >
+              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                {menuOpen ? (
+                  <path d="M18 6L6 18M6 6l12 12" />
+                ) : (
+                  <path d="M3 12h18M3 6h18M3 18h18" />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+        {/* Mobile menu */}
+        {menuOpen && (
+          <div className="sm:hidden bg-white border-t border-gray-100 px-4 py-4 flex flex-col gap-3">
+            <a
+              href="https://student.math-up.ai/signup"
+              className="w-full text-center px-4 py-3 bg-[#059669] hover:bg-[#047857] text-white rounded-xl text-sm font-semibold transition-colors"
+            >
+              Créer un compte
+            </a>
+            <a
+              href="https://student.math-up.ai/login"
+              className="w-full text-center px-4 py-3 border border-gray-300 hover:border-[#059669] text-gray-700 hover:text-[#059669] rounded-xl text-sm font-semibold transition-colors"
             >
               Se connecter
             </a>
           </div>
-        </div>
+        )}
       </nav>
 
       {/* Hero */}
@@ -130,6 +181,31 @@ export default function LandingPage() {
           >
             Commencer gratuitement
           </a>
+        </div>
+      </section>
+
+      {/* Ambassadeur */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto bg-[#111827] rounded-3xl p-10 sm:p-14 text-center">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-5 py-2 text-xs font-bold text-[#34D399] uppercase tracking-widest mb-6">
+            <span className="w-2 h-2 bg-[#34D399] rounded-full animate-pulse" />
+            Recrutement ouvert
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            Deviens <span className="text-[#059669]">Ambassadeur</span> Math Up
+          </h2>
+          <p className="text-gray-400 max-w-lg mx-auto mb-8 leading-relaxed">
+            Représente Math Up dans ton lycée, gagne un accès premium gratuit, une lettre de recommandation et une expérience unique pour ton CV.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/ambassadeur"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#059669] hover:bg-[#047857] text-white rounded-2xl text-lg font-bold transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/25"
+            >
+              En savoir plus
+              <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
       </section>
 
